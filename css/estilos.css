@@ -10,9 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 3fr 0.5fr;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
 .header {
   grid-area: header;
@@ -69,8 +67,7 @@ body {
   background-color: black;
   grid-template-columns: 2.3fr 0.7fr;
   grid-template-rows: 0.5fr;
-  grid-template-areas: "section1 aside"
- "section2 aside"; }
+  grid-template-areas: "section1 aside" "section2 aside"; }
   #mainindex .section1index {
     grid-area: section1; }
     #mainindex .section1index .tituloindex {
@@ -103,6 +100,58 @@ body {
     #mainindex .asideindex:hover {
       transform: scale(1.1); }
 
-footer {
-  background-color: aqua;
-}
+.pie-pagina {
+  grid-area: footer;
+  width: 100%;
+  background-color: #0a141d; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px; }
+    .pie-pagina .grupo-1 .box {
+      text-align: center; }
+      .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .pie-pagina .grupo-1 .box figure img {
+          width: 250px; }
+      .pie-pagina .grupo-1 .box h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px; }
+      .pie-pagina .grupo-1 .box p {
+        color: #efefef;
+        margin-bottom: 10px; }
+      .pie-pagina .grupo-1 .box .red-social a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+        transition: all 300ms ease; }
+        .pie-pagina .grupo-1 .box .red-social a:hover {
+          color: aqua; }
+  .pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    text-align: center;
+    color: #fff; }
+    .pie-pagina .grupo-2 small {
+      font-size: 15px; }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
