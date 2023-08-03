@@ -1,0 +1,44 @@
+.mainserv {
+    grid-area: main;
+    background-image: url(https://www.negocioseguroaig.com.br/wp-content/uploads/seguro-patrimonial-aig.jpg);
+    background-size: cover;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: 
+    "tituloserv"
+    "cardserv";
+    .tituloserv{
+        grid-area: tituloserv;
+        font-size: 20px;
+	    padding: 20px 0;
+        display: block;
+    }
+    div {
+        display: flex;
+        text-align: center;
+        margin: 20px;
+    .cardserv {
+        width: 30%;
+        grid-area: cardserv;
+        background-color: aquamarine;
+        border-radius: 10px;
+	    font-weight: bold;
+	    padding: 20px 10px;
+	    position: relative;
+	    overflow: hidden;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+        font-size: 14px;
+        color: #666;
+        }
+    }
+
+  }
+}
+  
+  

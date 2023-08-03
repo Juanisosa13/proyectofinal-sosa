@@ -18,7 +18,6 @@
                                 }
                             }
                     }
-              
                     .nav-links{
                         list-style: none;
                             li{
@@ -39,7 +38,11 @@
                             }
   
                     }
-}
+                    .menu-icon {
+                        display: none;
+                        color: #eceff1;
+                    }
+        }
                     .header .btn button{
                         font-weight: 700;
                         color: #1b3039;
