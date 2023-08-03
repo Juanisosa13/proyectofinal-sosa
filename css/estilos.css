@@ -121,7 +121,8 @@ body {
         justify-content: center;
         align-items: center; }
         .pie-pagina .grupo-1 .box figure img {
-          width: 250px; }
+          width: 250px;
+          border-radius: 30px; }
       .pie-pagina .grupo-1 .box h2 {
         color: #fff;
         margin-bottom: 25px;
