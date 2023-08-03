@@ -121,26 +121,40 @@ body {
     grid-area: tituloserv;
     font-size: 20px;
     padding: 20px 0;
-    display: block; }
-  .mainserv div {
+    display: block;
+    color: #ffffff;
+    text-align: center; }
+  .mainserv .contendorcard {
     display: flex;
-    text-align: center;
-    margin: 20px; }
-    .mainserv div .cardserv {
-      width: 30%;
+    text-align: center; }
+    .mainserv .contendorcard .cardserv {
       grid-area: cardserv;
-      background-color: aquamarine;
+      background-color: #766f91;
       border-radius: 10px;
+      border: 5px solid #ccc;
       font-weight: bold;
       padding: 20px 10px;
       position: relative;
-      overflow: hidden; }
-      .mainserv div .cardserv h2 {
+      overflow: hidden;
+      display: block; }
+      .mainserv .contendorcard .cardserv .imgsancor {
+        width: 100px;
+        height: 100px; }
+      .mainserv .contendorcard .cardserv .imgparana {
+        width: 150px;
+        height: 100px; }
+      .mainserv .contendorcard .cardserv .imgsancristobal {
+        width: 150px;
+        height: 100px; }
+      .mainserv .contendorcard .cardserv h2 {
         font-size: 24px;
-        margin-bottom: 10px; }
-      .mainserv div .cardserv p {
+        margin-bottom: 10px;
+        color: #ffffff; }
+      .mainserv .contendorcard .cardserv p {
         font-size: 14px;
-        color: #666; }
+        color: #ffffff; }
+      .mainserv .contendorcard .cardserv:hover {
+        transform: scale(1.1); }
 
 .pie-pagina {
   grid-area: footer;
@@ -192,6 +206,16 @@ body {
     .pie-pagina .grupo-2 small {
       font-size: 15px; }
 
+@media screen and (max-width: 1500px) {
+  .contendorcard {
+    flex-wrap: wrap; }
+  .cardserv {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px; } }
+
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none; }
@@ -222,8 +246,25 @@ body {
     grid-template-areas: "section1" "section2" "aside"; }
     #mainindex .imgindex {
       background-color: aqua; }
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px; } }
+  .contendorcard {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; }
+    .contendorcard .cardserv {
+      width: 100%;
+      margin: 0 auto;
+      border: 5px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 800px) {
+  .contendorcard {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px; }
+    .contendorcard .cardserv {
+      width: 80%;
+      margin: 0 auto;
+      border: 5px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px; } }

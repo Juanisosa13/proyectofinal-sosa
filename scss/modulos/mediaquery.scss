@@ -1,3 +1,17 @@
+@media screen and (max-width: 1500px)  {
+    .contendorcard {
+        flex-wrap: wrap;
+    }
+        .cardserv {
+            width: 30%; 
+            margin: 0 auto;
+            border: 1px solid #ccc; 
+            padding: 20px; 
+            margin-bottom: 20px; }
+
+}
+    
+
 @media screen and (max-width: 768px) {
     
     .nav-links {
@@ -37,8 +51,6 @@
     .menu-icon {
         display: block;
         }
-    
-    
     #mainindex {
         grid-template-columns: 1fr; 
         grid-template-rows: auto; 
@@ -50,12 +62,31 @@
             background-color: aqua;
         }
     }
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
+    .contendorcard {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        .cardserv {
+            width: 100%; 
+            margin: 0 auto;
+            border: 5px solid #ccc; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
     }
-}
+}   
+@media screen and (max-width: 800px) {
+    .contendorcard {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        .cardserv {
+            width: 80%; 
+            margin: 0 auto;
+            border: 5px solid #ccc; 
+            padding: 20px; 
+            margin-bottom: 20px;
+        }
+    }
 
-    
+}
