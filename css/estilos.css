@@ -10,7 +10,9 @@ body {
   font-family: "Poppins", sans-serif;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 3fr 0.5fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
 
 .header {
   grid-area: header;
@@ -67,7 +69,8 @@ body {
   background-color: black;
   grid-template-columns: 2.3fr 0.7fr;
   grid-template-rows: 0.5fr;
-  grid-template-areas: "section1 aside" "section2 aside"; }
+  grid-template-areas: "section1 aside"
+ "section2 aside"; }
   #mainindex .section1index {
     grid-area: section1; }
     #mainindex .section1index .tituloindex {
@@ -100,7 +103,6 @@ body {
     #mainindex .asideindex:hover {
       transform: scale(1.1); }
 
-.footer {
-  grid-area: footer;
-  background-color: #24262B;
-  padding: 80px 0; }
+footer {
+  background-color: aqua;
+}
