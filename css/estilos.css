@@ -42,7 +42,7 @@ body {
       color: #eceff1;
       text-decoration: none; }
       .header .nav-links a:hover {
-        color: #ffbc0e; }
+        color: aqua; }
   .header .menu-icon {
     display: none;
     color: #eceff1; }
@@ -59,7 +59,7 @@ body {
   font-size: 20px; }
   .header .btn button:hover {
     background-color: #e2f1f8;
-    color: #ffbc0e;
+    color: aqua;
     transform: scale(1.1); }
 
 #mainindex {
@@ -138,7 +138,7 @@ body {
       overflow: hidden;
       display: block; }
       .mainserv .contendorcard .cardserv .imgsancor {
-        width: 100px;
+        width: 150px;
         height: 100px; }
       .mainserv .contendorcard .cardserv .imgparana {
         width: 150px;
@@ -155,6 +155,39 @@ body {
         color: #ffffff; }
       .mainserv .contendorcard .cardserv:hover {
         transform: scale(1.1); }
+
+.mainapp {
+  grid-area: main;
+  background-size: cover;
+  object-fit: cover;
+  display: block;
+  text-align: center; }
+  .mainapp .tituloapp {
+    grid-area: tituloapp;
+    color: white;
+    font-size: 20px;
+    padding: 20px; }
+  .mainapp .videoapp {
+    grid-area: videoapp;
+    height: 300px;
+    width: 50%; }
+  .mainapp .imagenesapp {
+    color: white;
+    padding: 20px; }
+    .mainapp .imagenesapp .imgapple {
+      height: 50px;
+      width: 150px;
+      border-radius: 10px;
+      border: 2px solid white;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .mainapp .imagenesapp .imgandroid {
+      height: 50px;
+      width: 150px;
+      border-radius: 10px;
+      border: 2px solid white;
+      margin-top: 15px;
+      margin-bottom: 15px; }
 
 .pie-pagina {
   grid-area: footer;

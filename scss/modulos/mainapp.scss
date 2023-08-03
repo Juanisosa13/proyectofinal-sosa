@@ -1,0 +1,38 @@
+.mainapp {
+    grid-area: main;
+    background-size: cover;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+        .tituloapp {
+            grid-area: tituloapp;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 20px;
+        }
+        .videoapp {
+            grid-area: videoapp;
+            height: 300px;
+            width: 50%;
+        }
+        .imagenesapp {
+        color: rgb(255, 255, 255);
+        padding: 20px;
+            .imgapple {
+                height: 50px;
+                width: 150px;
+                border-radius: 10px;
+                border: 2px solid white;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .imgandroid {
+                height: 50px;
+                width: 150px;
+                border-radius: 10px;
+                border: 2px solid white;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+}
