@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     display: grid;
-    font-family: "Poppins", sans-serif;
+    font-family: $font2noto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr 3fr 0.5fr;
     grid-template-areas: 
