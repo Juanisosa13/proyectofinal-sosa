@@ -19,7 +19,8 @@
         }
     .menu-icon {
         display: block;
-    }
+        }
+    
     
     #mainindex {
         grid-template-columns: 1fr; 
@@ -34,41 +35,6 @@
         justify-items: center;
         }
     }
-    .maincontact {
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto; 
-        grid-template-areas:
-            "formcontact"
-            "asidecontact"
-            "sectioncontact"; 
-            .sectioncontact {
-                .contenedordeimg {
-                    display: block;
-                    .img1cont {
-                    width: 60%;
-                    padding: 10px;
-                    }
-                    .img2cont {
-                    width: 60%;  
-                    padding: 10px; 
-                    }
-                    .img3cont {
-                    width: 60%; 
-                    padding: 10px;
-                    }
-                    .img4cont {
-                    width: 60%;  
-                    padding: 10px; 
-                    }
-                    .img5cont {
-                    width: 60%;
-                    padding: 10px;   
-                    }
-                }
-            }
-    }
-
-    
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);

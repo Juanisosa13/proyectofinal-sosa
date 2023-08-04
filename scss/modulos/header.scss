@@ -6,7 +6,6 @@
     align-items: center;
     height: 85px;
     padding: 5px 10%;
-}
                     .logo{
                         cursor: pointer;
                             img{
@@ -39,6 +38,11 @@
                             }
   
                     }
+                    .menu-icon {
+                        display: none;
+                        color: #eceff1;
+                    }
+        }
                     .header .btn button{
                         font-weight: 700;
                         color: #1b3039;
