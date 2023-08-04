@@ -128,8 +128,12 @@
 }
 @media screen and (max-width: 480px){
 .maincontact {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    .formcontact {  
+    .textarea1 {
+        width: 80%;
+    }
+    }
 }
 }
     
