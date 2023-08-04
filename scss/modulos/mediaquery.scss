@@ -1,4 +1,7 @@
 @media screen and (max-width: 1500px)  {
+    .checkbtn {
+        display: none;
+    }
     .contendorcard {
         flex-wrap: wrap;
     }
@@ -10,12 +13,40 @@
             margin-bottom: 20px; }
 }
 @media screen and (max-width: 768px) { 
+    .checkbtn {
+        display: block; 
+        color: #cc0404;
+        }
     .nav-links {
-        display: none;
-        }
-    .menu-icon {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: #272727;
+    li {
         display: block;
+        margin: 50px;
+        line-height: 30px;
+        a {
+        font-size: 20px;
+        &:hover {
+        background-color: none;
+        color: red
         }
+        &:active {
+        background-color: none;
+        color: red
+        }
+        }
+    }
+    }
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
     #mainindex {
         grid-template-columns: 1fr; 
         grid-template-rows: auto; 
@@ -29,7 +60,36 @@
         justify-items: center;
         }
     }
+
+@media screen and (max-width: 600px) {
+    
+    #mainindex {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas:
+            "section1"
+            "section2"
+            "aside"; 
+        .imgindex {
+            background-color: aqua;
+        }
+    }
+    .contendorcard {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        .cardserv {
+            width: 100%; 
+            margin: 0 auto;
+            border: 5px solid #ccc; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
+    }
+}   
+@media screen and (max-width: 800px) {
     .maincontact {
+        display: grid;
         grid-template-columns: 1.5fr; 
         grid-template-rows: auto; 
         grid-template-areas:
@@ -38,7 +98,6 @@
         "asidecontact"
         "sectioncontact";
         .sectioncontact {
-            grid-area: sectioncontact;
             padding: 20px;
             .contenedordeimg{
                 display: block;
@@ -71,47 +130,6 @@
             }
         }
     }
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    
-    .nav-links {
-        display: none;
-        }
-    .menu-icon {
-        display: block;
-        }
-    #mainindex {
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto; 
-        grid-template-areas:
-            "section1"
-            "section2"
-            "aside"; 
-        .imgindex {
-            background-color: aqua;
-        }
-    }
-    .contendorcard {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        .cardserv {
-            width: 100%; 
-            margin: 0 auto;
-            border: 5px solid #ccc; 
-            padding: 20px; 
-            margin-bottom: 20px; 
-        }
-    }
-}   
-@media screen and (max-width: 800px) {
     .contendorcard {
         flex-direction: column;
         text-align: center;
@@ -124,10 +142,18 @@
             margin-bottom: 20px;
         }
     }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+
 
 }
 @media screen and (max-width: 480px){
-.maincontact {
+
+    .maincontact {
     display: block;
     .formcontact {  
     .textarea1 {

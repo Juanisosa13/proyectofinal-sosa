@@ -6,6 +6,19 @@
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+                    
+                    #check {
+                        display: none;
+                    }
+                    .checkbtn{
+                        font-size: 30px;
+                        color: #eceff1;
+                        float: right;
+                        line-height: 80px;
+                        cursor: pointer;
+                    }
+                        
+                    
                     .logo{
                         cursor: pointer;
                             img{
@@ -37,10 +50,6 @@
                                 }    
                             }
   
-                    }
-                    .menu-icon {
-                        display: none;
-                        color: #eceff1;
                     }
         }
                     .header .btn button{
