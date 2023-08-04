@@ -189,6 +189,85 @@ body {
       margin-top: 15px;
       margin-bottom: 15px; }
 
+.maincontact {
+  grid-area: main;
+  display: grid;
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulocont titulocont"  "formcontact asidecontact" "sectioncontact sectioncontact"; }
+  .maincontact .titulocontact {
+    grid-area: titulocont;
+    padding: 20px;
+    text-decoration: underline;
+    color: white; }
+    .maincontact .titulocontact .h1cont {
+      text-align: center;
+      color: white; }
+
+.formcontact {
+  grid-area: formcontact;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 10px 10px 10px;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .formcontact .fieldsetform {
+    background-color: #424141;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 10px; }
+  .formcontact .btnsend {
+    height: 30px;
+    width: 40%;
+    border-radius: 10px; }
+    .formcontact .btnsend:hover {
+      transform: scale(1.1); }
+
+.asidecontact {
+  grid-area: asidecontact;
+  border-radius: 25px;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 10px 10px 10px;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .asidecontact:hover {
+    transform: scale(1.1); }
+
+.sectioncontact {
+  grid-area: sectioncontact;
+  padding: 20px 20px; }
+  .sectioncontact .contenedordeimg {
+    display: flex;
+    justify-content: center; }
+    .sectioncontact .contenedordeimg .img1cont {
+      height: 150px;
+      width: 15%;
+      padding: 10px; }
+    .sectioncontact .contenedordeimg .img2cont {
+      height: 150px;
+      width: 15%;
+      padding: 10px; }
+    .sectioncontact .contenedordeimg .img3cont {
+      height: 150px;
+      width: 15%;
+      padding: 10px; }
+    .sectioncontact .contenedordeimg .img4cont {
+      height: 150px;
+      width: 15%;
+      padding: 10px; }
+    .sectioncontact .contenedordeimg .img5cont {
+      height: 150px;
+      width: 15%;
+      padding: 10px; }
+
 .pie-pagina {
   grid-area: footer;
   width: 100%;
@@ -262,6 +341,36 @@ body {
       width: 50%;
       height: 200px;
       justify-items: center; }
+  .maincontact {
+    grid-template-columns: 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulocont"  "formcontact" "asidecontact" "sectioncontact"; }
+    .maincontact .sectioncontact {
+      grid-area: sectioncontact;
+      padding: 20px; }
+      .maincontact .sectioncontact .contenedordeimg {
+        display: block;
+        justify-content: center; }
+        .maincontact .sectioncontact .contenedordeimg .img1cont {
+          height: 150px;
+          width: 50%;
+          padding: 10px; }
+        .maincontact .sectioncontact .contenedordeimg .img2cont {
+          height: 150px;
+          width: 50%;
+          padding: 10px; }
+        .maincontact .sectioncontact .contenedordeimg .img3cont {
+          height: 150px;
+          width: 50%;
+          padding: 10px; }
+        .maincontact .sectioncontact .contenedordeimg .img4cont {
+          height: 150px;
+          width: 50%;
+          padding: 10px; }
+        .maincontact .sectioncontact .contenedordeimg .img5cont {
+          height: 150px;
+          width: 50%;
+          padding: 10px; }
   .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
@@ -301,3 +410,8 @@ body {
       border: 5px solid #ccc;
       padding: 20px;
       margin-bottom: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .maincontact {
+    display: flex;
+    flex-direction: column; } }

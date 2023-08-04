@@ -8,20 +8,14 @@
             border: 1px solid #ccc; 
             padding: 20px; 
             margin-bottom: 20px; }
-
 }
-    
-
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 768px) { 
     .nav-links {
         display: none;
         }
     .menu-icon {
         display: block;
         }
-    
-    
     #mainindex {
         grid-template-columns: 1fr; 
         grid-template-rows: auto; 
@@ -33,6 +27,48 @@
         width: 50%;
         height: 200px;
         justify-items: center;
+        }
+    }
+    .maincontact {
+        grid-template-columns: 1.5fr; 
+        grid-template-rows: auto; 
+        grid-template-areas:
+        "titulocont" 
+        "formcontact"
+        "asidecontact"
+        "sectioncontact";
+        .sectioncontact {
+            grid-area: sectioncontact;
+            padding: 20px;
+            .contenedordeimg{
+                display: block;
+                justify-content: center;
+                .img1cont{
+                height: 150px;
+                width: 50%;
+                padding: 10px;
+                }
+                .img2cont{
+                height: 150px;
+                width: 50%;
+                padding: 10px;
+                }
+                .img3cont{
+                height: 150px;
+                width: 50%;
+                padding: 10px;
+                }
+                .img4cont{
+                height: 150px;
+                width: 50%;
+                padding: 10px;
+                }
+                .img5cont{
+                height: 150px;
+                width: 50%;
+                padding: 10px;
+                }
+            }
         }
     }
     .pie-pagina .grupo-1{
@@ -90,3 +126,10 @@
     }
 
 }
+@media screen and (max-width: 480px){
+.maincontact {
+    display: flex;
+    flex-direction: column;
+}
+}
+    

@@ -1,0 +1,94 @@
+.maincontact {
+    grid-area: main;
+    display: grid;
+    background-size: cover;
+    object-fit: cover;
+    text-align: center;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "titulocont titulocont" 
+    "formcontact asidecontact"
+    "sectioncontact sectioncontact";
+    .titulocontact {
+        grid-area: titulocont;
+        padding: 20px;
+        text-decoration: underline;
+        color: white;
+        .h1cont {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        }
+    }
+    .formcontact {
+        grid-area: formcontact;
+        text-align: center;
+        padding: 25px;
+        margin: 10px 10px 10px 10px;
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .fieldsetform {
+            background-color: rgb(66, 65, 65);
+            border-radius: 25px;
+            border: 2px solid white;
+            padding: 10px
+                }
+        .btnsend {
+            height: 30px;
+            width: 40%;
+            border-radius: 10px;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }        
+    }
+    .asidecontact {
+        grid-area: asidecontact;
+        border-radius: 25px;
+        text-align: center;
+        padding: 25px;
+        margin: 10px 10px 10px 10px;
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-between;
+                    &:hover{
+                    transform: scale(1.1);
+                    } 
+    }
+    .sectioncontact {
+        grid-area: sectioncontact;
+        padding: 20px 20px;
+        .contenedordeimg{
+            display: flex;
+            justify-content: center;
+            .img1cont{
+            height: 150px;
+            width: 15%;
+            padding: 10px;
+            }
+            .img2cont{
+            height: 150px;
+            width: 15%;
+            padding: 10px;
+            }
+            .img3cont{
+            height: 150px;
+            width: 15%;
+            padding: 10px;
+            }
+            .img4cont{
+            height: 150px;
+            width: 15%;
+            padding: 10px;
+            }
+            .img5cont{
+            height: 150px;
+            width: 15%;
+            padding: 10px;
+            }
+        }
+    }
