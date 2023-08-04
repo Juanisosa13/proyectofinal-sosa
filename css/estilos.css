@@ -20,32 +20,31 @@ body {
   align-items: center;
   height: 85px;
   padding: 5px 10%; }
-  .header .logo {
-    cursor: pointer; }
-    .header .logo img {
-      height: 70px;
-      width: auto;
-      transition: all 0.3s;
-      border-radius: 30px; }
-      .header .logo img:hover {
-        transform: scale(1.2); }
-  .header .nav-links {
-    list-style: none; }
-    .header .nav-links li {
-      display: inline-block;
-      padding: 0 20px;
-      font-size: 20px; }
-      .header .nav-links li:hover {
-        transform: scale(1.1); }
-    .header .nav-links a {
-      font-size: 700;
-      color: #eceff1;
-      text-decoration: none; }
-      .header .nav-links a:hover {
-        color: aqua; }
-  .header .menu-icon {
-    display: none;
-    color: #eceff1; }
+
+.logo {
+  cursor: pointer; }
+  .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 30px; }
+    .logo img:hover {
+      transform: scale(1.2); }
+
+.nav-links {
+  list-style: none; }
+  .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px; }
+    .nav-links li:hover {
+      transform: scale(1.1); }
+  .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none; }
+    .nav-links a:hover {
+      color: aqua; }
 
 .header .btn button {
   font-weight: 700;
@@ -189,6 +188,78 @@ body {
       margin-top: 15px;
       margin-bottom: 15px; }
 
+.maincontact {
+  grid-area: main;
+  display: grid;
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulocont titulocont"  "formcontact asidecontact" "sectioncontact sectioncontact"; }
+  .maincontact .titulocontact {
+    grid-area: titulocont;
+    padding: 20px;
+    text-decoration: underline;
+    color: white; }
+    .maincontact .titulocontact .h1cont {
+      text-align: center;
+      color: white; }
+
+.formcontact {
+  grid-area: formcontact;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 10px 10px 10px;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .formcontact .fieldsetform {
+    background-color: #424141;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 10px; }
+  .formcontact .btnsend {
+    height: 30px;
+    width: 40%;
+    border-radius: 10px; }
+
+.asidecontact {
+  grid-area: asidecontact;
+  border-radius: 25px;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 10px 10px 10px;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .asidecontact:hover {
+    transform: scale(1.1); }
+
+.sectioncontact {
+  grid-area: sectioncontact;
+  padding: 20px 20px; }
+  .sectioncontact .contenedordeimg {
+    display: flex;
+    justify-content: center; }
+    .sectioncontact .contenedordeimg .img1cont {
+      height: 150px;
+      width: 15%; }
+    .sectioncontact .contenedordeimg .img2cont {
+      height: 150px;
+      width: 15%; }
+    .sectioncontact .contenedordeimg .img3cont {
+      height: 150px;
+      width: 15%; }
+    .sectioncontact .contenedordeimg .img4cont {
+      height: 150px;
+      width: 15%; }
+    .sectioncontact .contenedordeimg .img5cont {
+      height: 150px;
+      width: 15%; }
+
 .pie-pagina {
   grid-area: footer;
   width: 100%;
@@ -262,6 +333,27 @@ body {
       width: 50%;
       height: 200px;
       justify-items: center; }
+  .maincontact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "formcontact" "asidecontact" "sectioncontact"; }
+    .maincontact .sectioncontact .contenedordeimg {
+      display: block; }
+      .maincontact .sectioncontact .contenedordeimg .img1cont {
+        width: 60%;
+        padding: 10px; }
+      .maincontact .sectioncontact .contenedordeimg .img2cont {
+        width: 60%;
+        padding: 10px; }
+      .maincontact .sectioncontact .contenedordeimg .img3cont {
+        width: 60%;
+        padding: 10px; }
+      .maincontact .sectioncontact .contenedordeimg .img4cont {
+        width: 60%;
+        padding: 10px; }
+      .maincontact .sectioncontact .contenedordeimg .img5cont {
+        width: 60%;
+        padding: 10px; }
   .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
