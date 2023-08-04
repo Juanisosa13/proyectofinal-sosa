@@ -1,4 +1,4 @@
-.mainserv {
+.maincobert {
     grid-area: main;
     background-image: url(https://www.negocioseguroaig.com.br/wp-content/uploads/seguro-patrimonial-aig.jpg);
     background-size: cover;
@@ -9,7 +9,7 @@
     grid-template-areas: 
     "tituloserv"
     "cardserv";
-    .tituloserv{
+    .titulocobert{
         grid-area: tituloserv;
         font-size: 20px;
 	    padding: 20px 0;
@@ -17,28 +17,29 @@
         color: #ffffff;
         text-align: center;
     }
-    .contendorcard {
+    .contendorcardcobert {
         display: flex;
+        justify-content: center;
         text-align: center;
-        .cardserv {
+        padding: 20px 20px;}
+    .cardcobert {
             grid-area: cardserv;
             background-color: rgb(118, 111, 145);
             border-radius: 10px;
             border: 5px solid #ccc;
             font-weight: bold;
             padding: 20px 10px;
+            width: 30%;
             margin: 20px;
-            overflow: hidden;
-            display: block;
-                    .imgsancor {
+                    .segauto {
                         width: 150px;
                         height: 100px;
                     }
-                    .imgparana {
+                    .segpatrimoniales {
                         width: 150px;
                         height: 100px;
                     }
-                    .imgsancristobal {
+                    .segpersonas {
                         width: 150px;
                         height: 100px;
                     }
@@ -59,7 +60,6 @@
     }
 
 
-  }
 
   
   
