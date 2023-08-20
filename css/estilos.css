@@ -67,40 +67,39 @@ body {
     color: aqua;
     transform: scale(1.1); }
 
-#mainindex {
+.mainindex {
   grid-area: main;
   display: grid;
   background-image: url(https://www.negocioseguroaig.com.br/wp-content/uploads/seguro-patrimonial-aig.jpg);
   background-size: cover;
-  grid-template-columns: 2.3fr 0.7fr;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas: "section1 aside" "section2 aside"; }
-  #mainindex .section1index {
+  .mainindex .section1index {
     grid-area: section1;
     padding-bottom: 25px; }
-    #mainindex .section1index .tituloindex {
+    .mainindex .section1index .tituloindex {
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 15px;
       font-family: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
-      font-size: 25px;
-      text-decoration: underline; }
-  #mainindex .section2index {
+      font-size: 25px; }
+  .mainindex .section2index {
     grid-area: section2; }
-    #mainindex .section2index .textosindex {
+    .mainindex .section2index .textosindex {
       color: white;
-      font-size: 30px;
+      font-size: 1rem;
       text-align: center;
       padding: 10px; }
-    #mainindex .section2index div {
+    .mainindex .section2index div {
       text-align: center; }
-      #mainindex .section2index div .imgindex {
+      .mainindex .section2index div .imgindex {
         width: 100%;
         max-width: 400px;
         height: 220px; }
-  #mainindex .asideindex {
+  .mainindex .asideindex {
     grid-area: aside;
     border-radius: 25px;
     text-align: center;
@@ -110,8 +109,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    #mainindex .asideindex:hover {
-      transform: scale(1.1); }
 
 .mainserv {
   grid-area: main;
@@ -134,7 +131,7 @@ body {
     text-align: center; }
     .mainserv .contendorcard .cardserv {
       grid-area: cardserv;
-      background-color: #766f91;
+      background-color: #b1b0b6;
       border-radius: 10px;
       border: 5px solid #ccc;
       font-weight: bold;
@@ -183,7 +180,7 @@ body {
     padding: 20px 20px; }
   .maincobert .cardcobert {
     grid-area: cardserv;
-    background-color: #766f91;
+    background-color: #474749;
     border-radius: 10px;
     border: 5px solid #ccc;
     font-weight: bold;
@@ -254,7 +251,6 @@ body {
   .maincontact .titulocontact {
     grid-area: titulocont;
     padding: 20px;
-    text-decoration: underline;
     color: white; }
     .maincontact .titulocontact .h1cont {
       text-align: center;
@@ -324,7 +320,7 @@ body {
 .pie-pagina {
   grid-area: footer;
   width: 100%;
-  background-color: #0a141d; }
+  background-color: #08111a; }
   .pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
@@ -383,7 +379,11 @@ body {
     padding: 20px;
     margin-bottom: 20px; } }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
+  .mainindex {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "section1" "section2" "aside"; }
   .checkbtn {
     display: block;
     color: #cc0404; }
@@ -407,39 +407,9 @@ body {
           color: red; }
         .nav-links li a:active {
           background-color: none;
-          color: red; } }
-
-#check:checked ~ ul {
-  left: 0; }
-
-#mainindex {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "section1" "section2" "aside"; }
-  #mainindex .imgindex {
-    width: 50%;
-    height: 200px;
-    justify-items: center; }
-
-@media screen and (max-width: 600px) {
-  #mainindex {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "section1" "section2" "aside"; }
-    #mainindex .imgindex {
-      background-color: aqua; }
-  .contendorcard {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px; }
-    .contendorcard .cardserv {
-      width: 80%;
-      margin: 0 auto;
-      border: 5px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px; } }
-
-@media screen and (max-width: 800px) {
+          color: red; }
+  #check:checked ~ ul {
+    left: 0; }
   .maincontact {
     display: grid;
     grid-template-columns: 1.5fr;
@@ -476,6 +446,16 @@ body {
     text-align: center;
     padding: 40px; }
     .contendorcardcobert .cardcobert {
+      width: 80%;
+      margin: 0 auto;
+      border: 5px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px; }
+  .contendorcard {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; }
+    .contendorcard .cardserv {
       width: 80%;
       margin: 0 auto;
       border: 5px solid #ccc;

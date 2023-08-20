@@ -12,7 +12,17 @@
             padding: 20px; 
             margin-bottom: 20px; }
 }
-@media screen and (max-width: 790px) { 
+
+@media screen and (max-width: 800px)
+{
+    .mainindex {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas:
+            "section1"
+            "section2"
+            "aside"; 
+        }
     .checkbtn {
         display: block; 
         color: #cc0404;
@@ -43,51 +53,10 @@
         }
     }
     }
-    }
     #check:checked ~ ul{
         left:0;
     }
-    #mainindex {
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto; 
-        grid-template-areas:
-            "section1"
-            "section2"
-            "aside"; 
-        .imgindex {
-        width: 50%;
-        height: 200px;
-        justify-items: center;
-        }
-    }
-
-@media screen and (max-width: 600px) {
-    
-    #mainindex {
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto; 
-        grid-template-areas:
-            "section1"
-            "section2"
-            "aside"; 
-        .imgindex {
-            background-color: aqua;
-        }
-    }
-    .contendorcard {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        .cardserv {
-            width: 80%; 
-            margin: 0 auto;
-            border: 5px solid #ccc; 
-            padding: 20px; 
-            margin-bottom: 20px; 
-        }
-    }
-}   
-@media screen and (max-width: 800px) {
+        
     .maincontact {
         display: grid;
         grid-template-columns: 1.5fr; 
@@ -143,6 +112,18 @@
             margin-bottom: 20px;
         }
     }
+    .contendorcard {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        .cardserv {
+            width: 80%; 
+            margin: 0 auto;
+            border: 5px solid #ccc; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
+    }
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -163,4 +144,3 @@
     }
 }
 }
-    
