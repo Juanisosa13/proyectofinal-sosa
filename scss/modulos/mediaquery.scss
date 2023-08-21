@@ -143,4 +143,17 @@
     }
     }
 }
+    .mainapp {
+        .videoyparrafo {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+            .parrafoapp {
+                width: 80%;
+            }
+            .videoapp {
+                width: 70%;
+            }
+        }
+    }
 }

@@ -32,7 +32,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  padding: 5px 10%; }
+  padding: 5px 10%;
+  animation: bounce;
+  animation-duration: 2s; }
   .header #check {
     display: none; }
   .header .checkbtn {
@@ -171,7 +173,7 @@ body {
   grid-template-areas: "tituloserv" "cardserv"; }
   .maincobert .titulocobert {
     grid-area: tituloserv;
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 20px 0;
     display: block;
     color: #ffffff;
@@ -476,4 +478,12 @@ body {
   .maincontact {
     display: block; }
     .maincontact .formcontact .textarea1 {
-      width: 80%; } }
+      width: 80%; }
+  .mainapp .videoyparrafo {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px; }
+    .mainapp .videoyparrafo .parrafoapp {
+      width: 80%; }
+    .mainapp .videoyparrafo .videoapp {
+      width: 70%; } }

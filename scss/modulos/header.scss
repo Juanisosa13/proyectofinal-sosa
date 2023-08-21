@@ -1,5 +1,7 @@
 .header {
     @include header-mixin;
+    animation: bounce; 
+    animation-duration: 2s; 
   
     .logo {
       @include logo-mixin;
