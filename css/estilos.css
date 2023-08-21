@@ -32,9 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  padding: 5px 10%;
-  animation: bounce;
-  animation-duration: 2s; }
+  padding: 5px 10%; }
   .header #check {
     display: none; }
   .header .checkbtn {
@@ -100,7 +98,9 @@ body {
       color: white;
       margin-top: 15px;
       font-family: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
-      font-size: 25px; }
+      font-size: 25px;
+      animation: bounce;
+      animation-duration: 2s; }
   .mainindex .section2index {
     grid-area: section2; }
     .mainindex .section2index .textosindex {
@@ -142,7 +142,9 @@ body {
     color: #ffffff;
     text-align: center; }
   .mainserv .contendorcard .cardserv {
-    grid-area: cardserv; }
+    grid-area: cardserv;
+    animation: bounce;
+    animation-duration: 2s; }
     .mainserv .contendorcard .cardserv .imgsancor {
       width: 150px;
       height: 100px; }
@@ -184,7 +186,9 @@ body {
     text-align: center;
     padding: 20px 20px; }
   .maincobert .cardcobert {
-    grid-area: cardserv; }
+    grid-area: cardserv;
+    animation: bounce;
+    animation-duration: 2s; }
     .maincobert .cardcobert .segauto {
       width: 150px;
       height: 100px; }
@@ -228,7 +232,9 @@ body {
     .mainapp .videoyparrafo .videoapp {
       height: 350px;
       width: 70%;
-      padding: 20px; }
+      padding: 20px;
+      animation: bounce;
+      animation-duration: 2s; }
   .mainapp .imagenesapp {
     color: white;
     padding: 20px; }
@@ -271,7 +277,9 @@ body {
   color: azure;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  animation: bounce;
+  animation-duration: 2s; }
   .formcontact .fieldsetform {
     background-color: #2b2b2b;
     border-radius: 25px;
@@ -293,7 +301,9 @@ body {
   color: azure;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  animation: bounce;
+  animation-duration: 2s; }
   .asidecontact:hover {
     transform: scale(1.1); }
 

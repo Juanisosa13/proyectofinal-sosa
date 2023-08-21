@@ -25,6 +25,8 @@
     .cardcobert {
             grid-area: cardserv;
             @extend %card-text;
+            animation: bounce;
+            animation-duration: 2s; 
                     .segauto {
                         width: 150px;
                         height: 100px;

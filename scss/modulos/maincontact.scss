@@ -28,6 +28,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        animation: bounce;
+        animation-duration: 2s;
         .fieldsetform {
             background-color: rgb(43, 43, 43);
             border-radius: 25px;
@@ -53,6 +55,8 @@
         display: flex;
         flex-direction: column;
         justify-content:  space-between;
+        animation: bounce;
+        animation-duration: 2s;
                     &:hover{
                     transform: scale(1.1);
                     } 
