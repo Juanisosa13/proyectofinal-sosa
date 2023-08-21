@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
+.mainserv .contendorcard {
+  display: flex;
+  text-align: center; }
+
+.mainserv .contendorcard .cardserv, .maincobert .cardcobert {
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  border: 5px solid #ccc;
+  font-weight: bold;
+  padding: 20px 10px;
+  width: 30%;
+  margin: 20px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -78,10 +91,11 @@ body {
     grid-area: section1;
     padding-bottom: 25px; }
     .mainindex .section1index .tituloindex {
-      color: white;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
+      color: white;
       margin-top: 15px;
       font-family: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
       font-size: 25px; }
@@ -125,36 +139,26 @@ body {
     display: block;
     color: #ffffff;
     text-align: center; }
-  .mainserv .contendorcard {
-    display: flex;
-    text-align: center; }
-    .mainserv .contendorcard .cardserv {
-      grid-area: cardserv;
-      background-color: #b1b0b6;
-      border-radius: 10px;
-      border: 5px solid #ccc;
-      font-weight: bold;
-      padding: 20px;
-      overflow: hidden;
-      display: block; }
-      .mainserv .contendorcard .cardserv .imgsancor {
-        width: 150px;
-        height: 100px; }
-      .mainserv .contendorcard .cardserv .imgparana {
-        width: 150px;
-        height: 100px; }
-      .mainserv .contendorcard .cardserv .imgsancristobal {
-        width: 150px;
-        height: 100px; }
-      .mainserv .contendorcard .cardserv h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #ffffff; }
-      .mainserv .contendorcard .cardserv p {
-        font-size: 14px;
-        color: #ffffff; }
-      .mainserv .contendorcard .cardserv:hover {
-        transform: scale(1.1); }
+  .mainserv .contendorcard .cardserv {
+    grid-area: cardserv; }
+    .mainserv .contendorcard .cardserv .imgsancor {
+      width: 150px;
+      height: 100px; }
+    .mainserv .contendorcard .cardserv .imgparana {
+      width: 150px;
+      height: 100px; }
+    .mainserv .contendorcard .cardserv .imgsancristobal {
+      width: 150px;
+      height: 100px; }
+    .mainserv .contendorcard .cardserv h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ffffff; }
+    .mainserv .contendorcard .cardserv p {
+      font-size: 14px;
+      color: #ffffff; }
+    .mainserv .contendorcard .cardserv:hover {
+      transform: scale(1.1); }
 
 .maincobert {
   grid-area: main;
@@ -178,14 +182,7 @@ body {
     text-align: center;
     padding: 20px 20px; }
   .maincobert .cardcobert {
-    grid-area: cardserv;
-    background-color: #474749;
-    border-radius: 10px;
-    border: 5px solid #ccc;
-    font-weight: bold;
-    padding: 20px 10px;
-    width: 30%;
-    margin: 20px; }
+    grid-area: cardserv; }
     .maincobert .cardcobert .segauto {
       width: 150px;
       height: 100px; }
@@ -216,10 +213,20 @@ body {
     color: white;
     font-size: 20px;
     padding: 20px; }
-  .mainapp .videoapp {
-    grid-area: videoapp;
-    height: 300px;
-    width: 50%; }
+  .mainapp .videoyparrafo {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px; }
+    .mainapp .videoyparrafo .parrafoapp {
+      width: 50%;
+      padding: 20px;
+      font-size: 1.2rem; }
+    .mainapp .videoyparrafo .videoapp {
+      height: 350px;
+      width: 70%;
+      padding: 20px; }
   .mainapp .imagenesapp {
     color: white;
     padding: 20px; }
@@ -250,10 +257,9 @@ body {
   .maincontact .titulocontact {
     grid-area: titulocont;
     padding: 20px;
+    color: white;
+    text-align: center;
     color: white; }
-    .maincontact .titulocontact .h1cont {
-      text-align: center;
-      color: white; }
 
 .formcontact {
   grid-area: formcontact;
@@ -265,7 +271,7 @@ body {
   flex-direction: column;
   justify-content: center; }
   .formcontact .fieldsetform {
-    background-color: #424141;
+    background-color: #2b2b2b;
     border-radius: 25px;
     border: 2px solid white;
     padding: 10px; }

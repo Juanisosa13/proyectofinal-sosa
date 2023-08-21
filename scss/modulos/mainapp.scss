@@ -10,10 +10,24 @@
             font-size: 20px;
             padding: 20px;
         }
-        .videoapp {
-            grid-area: videoapp;
-            height: 300px;
-            width: 50%;
+        .videoyparrafo {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px;
+            .parrafoapp {
+                width: 50%;
+                padding: 20px;
+                font-size: 1.2rem;
+                
+            }
+            .videoapp {
+                height: 350px;
+                width: 70%;
+                padding: 20px;
+            }
+
         }
         .imagenesapp {
         color: rgb(255, 255, 255);
@@ -24,7 +38,7 @@
                 border-radius: 10px;
                 border: 2px solid white;
                 margin-top: 15px;
-                margin-bottom: 15px;
+                margin-bottom: 15px; 
             }
             .imgandroid {
                 height: 50px;
@@ -32,7 +46,7 @@
                 border-radius: 10px;
                 border: 2px solid white;
                 margin-top: 15px;
-                margin-bottom: 15px;
+                margin-bottom: 15px; 
             }
         }
 }

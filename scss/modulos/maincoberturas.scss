@@ -24,13 +24,7 @@
         padding: 20px 20px;}
     .cardcobert {
             grid-area: cardserv;
-            background-color: rgb(71, 71, 73);
-            border-radius: 10px;
-            border: 5px solid #ccc;
-            font-weight: bold;
-            padding: 20px 10px;
-            width: 30%;
-            margin: 20px;
+            @extend %card-text;
                     .segauto {
                         width: 150px;
                         height: 100px;
