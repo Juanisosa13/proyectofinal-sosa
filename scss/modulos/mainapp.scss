@@ -9,6 +9,8 @@
             color: rgb(255, 255, 255);
             font-size: 20px;
             padding: 20px;
+            animation: backInDown;
+            animation-duration: 2s;
         }
         .videoyparrafo {
             color: white;
@@ -20,13 +22,15 @@
                 width: 50%;
                 padding: 20px;
                 font-size: 1.2rem;
+                animation: backInLeft;
+                animation-duration: 2s;
                 
             }
             .videoapp {
                 height: 350px;
                 width: 70%;
                 padding: 20px;
-                animation: bounce;
+                animation: backInRight;
                 animation-duration: 2s;
             }
 

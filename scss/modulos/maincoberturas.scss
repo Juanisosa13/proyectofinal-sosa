@@ -16,6 +16,8 @@
         display: block;
         color: #ffffff;
         text-align: center;
+        animation: backInDown;
+        animation-duration: 2s;
     }
     .contendorcardcobert {
         display: flex;
@@ -25,7 +27,7 @@
     .cardcobert {
             grid-area: cardserv;
             @extend %card-text;
-            animation: bounce;
+            animation: backInUp;
             animation-duration: 2s; 
                     .segauto {
                         width: 150px;

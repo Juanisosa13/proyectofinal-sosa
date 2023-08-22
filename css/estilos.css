@@ -54,13 +54,16 @@ body {
     list-style: none; }
     .header .nav-links li {
       display: inline-block;
-      padding: 0 20px;
-      font-size: 20px; }
+      padding: 9px 25px;
+      font-size: 20px;
+      background-color: #eceff1;
+      border: none;
+      border-radius: 50px; }
       .header .nav-links li:hover {
         transform: scale(1.1); }
     .header .nav-links a {
-      font-size: 700;
-      color: #eceff1;
+      font-size: 1rem;
+      color: #1b3039;
       text-decoration: none; }
       .header .nav-links a:hover {
         color: aqua; }
@@ -99,7 +102,7 @@ body {
       margin-top: 15px;
       font-family: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
       font-size: 25px;
-      animation: bounce;
+      animation: backInDown;
       animation-duration: 2s; }
   .mainindex .section2index {
     grid-area: section2; }
@@ -107,7 +110,9 @@ body {
       color: white;
       font-size: 1rem;
       text-align: center;
-      padding: 10px; }
+      padding: 10px;
+      animation: backInLeft;
+      animation-duration: 2s; }
     .mainindex .section2index div {
       text-align: center; }
       .mainindex .section2index div .imgindex {
@@ -123,7 +128,9 @@ body {
     color: azure;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    animation: backInRight;
+    animation-duration: 2s; }
 
 .mainserv {
   grid-area: main;
@@ -140,10 +147,12 @@ body {
     padding: 20px 0;
     display: block;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    animation: backInDown;
+    animation-duration: 2s; }
   .mainserv .contendorcard .cardserv {
     grid-area: cardserv;
-    animation: bounce;
+    animation: backInUp;
     animation-duration: 2s; }
     .mainserv .contendorcard .cardserv .imgsancor {
       width: 150px;
@@ -179,7 +188,9 @@ body {
     padding: 20px 0;
     display: block;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    animation: backInDown;
+    animation-duration: 2s; }
   .maincobert .contendorcardcobert {
     display: flex;
     justify-content: center;
@@ -187,7 +198,7 @@ body {
     padding: 20px 20px; }
   .maincobert .cardcobert {
     grid-area: cardserv;
-    animation: bounce;
+    animation: backInUp;
     animation-duration: 2s; }
     .maincobert .cardcobert .segauto {
       width: 150px;
@@ -218,7 +229,9 @@ body {
     grid-area: tituloapp;
     color: white;
     font-size: 20px;
-    padding: 20px; }
+    padding: 20px;
+    animation: backInDown;
+    animation-duration: 2s; }
   .mainapp .videoyparrafo {
     color: white;
     display: flex;
@@ -228,12 +241,14 @@ body {
     .mainapp .videoyparrafo .parrafoapp {
       width: 50%;
       padding: 20px;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      animation: backInLeft;
+      animation-duration: 2s; }
     .mainapp .videoyparrafo .videoapp {
       height: 350px;
       width: 70%;
       padding: 20px;
-      animation: bounce;
+      animation: backInRight;
       animation-duration: 2s; }
   .mainapp .imagenesapp {
     color: white;
@@ -267,7 +282,9 @@ body {
     padding: 20px;
     color: white;
     text-align: center;
-    color: white; }
+    color: white;
+    animation: backInDown;
+    animation-duration: 2s; }
 
 .formcontact {
   grid-area: formcontact;
@@ -302,7 +319,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: bounce;
+  animation: backInRight;
   animation-duration: 2s; }
   .asidecontact:hover {
     transform: scale(1.1); }
@@ -457,22 +474,23 @@ body {
           height: 150px;
           width: 50%;
           padding: 10px; }
+  .mainserv {
+    display: flex;
+    flex-direction: column; }
+    .mainserv .contendorcard {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mainserv .contendorcard .cardserv {
+        display: block;
+        align-items: center;
+        width: 70%; }
   .contendorcardcobert {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 40px; }
     .contendorcardcobert .cardcobert {
-      width: 80%;
-      margin: 0 auto;
-      border: 5px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px; }
-  .contendorcard {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px; }
-    .contendorcard .cardserv {
       width: 80%;
       margin: 0 auto;
       border: 5px solid #ccc;

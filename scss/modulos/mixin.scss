@@ -40,8 +40,11 @@
   
     li {
       display: inline-block;
-      padding: 0 20px;
+      padding: 9px 25px;
       font-size: 20px;
+      background-color: #eceff1;
+      border: none;
+      border-radius: 50px;
   
       &:hover {
         transform: scale(1.1);
@@ -49,8 +52,8 @@
     }
   
     a {
-      font-size: 700;
-      color: #eceff1;
+      font-size: 1rem;
+      color: #1b3039;
       text-decoration: none;
   
       &:hover {

@@ -16,13 +16,15 @@
         display: block;
         color: #ffffff;
         text-align: center;
+        animation: backInDown;
+        animation-duration: 2s;
     }
     .contendorcard {
         @extend %display-flex;
         .cardserv {
             grid-area: cardserv;
             @extend %card-text;
-            animation: bounce;
+            animation: backInUp;
             animation-duration: 2s;
                     .imgsancor {
                         width: 150px;

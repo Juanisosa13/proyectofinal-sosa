@@ -99,6 +99,20 @@
             }
         }
     }
+    .mainserv {
+        display: flex;
+        flex-direction: column;
+    .contendorcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cardserv {
+            display: block;
+            align-items: center;
+            width: 70%;
+        }
+    }
+    }
     .contendorcardcobert {
         display: flex;
         flex-direction: column;
@@ -112,26 +126,12 @@
             margin-bottom: 20px;
         }
     }
-    .contendorcard {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        .cardserv {
-            width: 80%; 
-            margin: 0 auto;
-            border: 5px solid #ccc; 
-            padding: 20px; 
-            margin-bottom: 20px; 
-        }
-    }
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
     }
-
-
 }
 @media screen and (max-width: 480px){
 
